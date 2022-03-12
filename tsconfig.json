@@ -1,0 +1,19 @@
+{
+    "include": [
+        "src",
+        "test",
+        "scripts"
+    ],
+    "exclude": ["node_modules"],
+    "compilerOptions": 
+    {
+        "target": "ES2022",
+        "strict": true,
+        "module": "CommonJS",
+        "pretty": true,
+        "checkJs": true,
+        "declaration": true,
+        "sourceMap": true,
+        "removeComments": true,
+    }
+}
