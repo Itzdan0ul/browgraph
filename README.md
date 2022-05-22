@@ -1,4 +1,4 @@
-![Representative banner of the application](/.github/banner.png)
+![Representative banner of the application](/.github/resources/banner.png)
 
 ## About
 <p align="justify">
