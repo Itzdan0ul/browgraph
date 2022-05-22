@@ -1,0 +1,119 @@
+{
+  "name": "browgraph",
+  "version": "0.0.1",
+  "description": "Desktop software for the management of stationery didactic materials.",
+  "main": "src/index.ts",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "start": "electron src",
+    "dev": "cross-env NODE_ENV=development electron src",
+    "test": "jest",
+    "tsc": "tsc --project ./",
+    "webpack": "webpack",
+    "rebuild": "electron-rebuild",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Itzdan0ul/browgraph.git"
+  },
+  "keywords": [
+    "management",
+    "desktop",
+    "electronjs",
+    "stationery"
+  ],
+  "author": "Itzdan0ul",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/Itzdan0ul/browgraph/issues"
+  },
+  "homepage": "https://github.com/Itzdan0ul/browgraph#readme",
+  "dependencies": {
+    "better-sqlite3": "^7.5.3",
+    "electron-updater": "^5.0.1",
+    "fs-extra": "^10.1.0",
+    "module-alias": "^2.2.2"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.16.11",
+    "@babel/preset-typescript": "^7.16.7",
+    "@types/better-sqlite3": "^7.5.0",
+    "@types/fs-extra": "^9.0.13",
+    "@types/jest": "^27.4.1",
+    "@types/module-alias": "^2.0.1",
+    "@types/node": "^17.0.21",
+    "@vue/compiler-sfc": "^3.2.31",
+    "cross-env": "^7.0.3",
+    "electron": "^18.2.4",
+    "electron-builder": "^23.0.3",
+    "electron-rebuild": "^3.2.7",
+    "jest": "^27.5.1",
+    "vue": "^3.2.31",
+    "vue-loader": "^17.0.0",
+    "vuex": "^4.0.2",
+    "webpack": "^5.70.0",
+    "webpack-cli": "^4.9.2"
+  },
+  "build": {
+    "appId": "com.itzdan0ul.browgraph",
+    "productName": "Browgraph",
+    "copyright": "Copyright © 2022 Itzdan0ul",
+    "directories": {
+      "output": "build/release"
+    },
+    "compression": "maximum",
+    "asar": true,
+    "afterPack": "scripts/afterPack.js",
+    "npmRebuild": false,
+    "files": [
+      "!**/renderer/**/*.scss",
+      "!**/renderer/**/*.vue",
+      "!.vscode",
+      "!.github",
+      "!README.md",
+      "!SECURITY.md",
+      "!webpack.config.js",
+      "!tsconfig.json",
+      "!test",
+      "!resources",
+      "!jest.config.js",
+      "!babel.config.js"
+    ],
+    "win": {
+      "target": "nsis",
+      "icon": "build/images/browgraph.ico"
+    },
+    "nsis": {
+      "oneClick": false,
+      "installerIcon": "build/images/browgraph.ico",
+      "uninstallDisplayName": "${productName}",
+      "license": "LICENSE",
+      "artifactName": "${productName}-Setup-${version}.${ext}",
+      "deleteAppDataOnUninstall": true,
+      "installerLanguages": [
+        "es_ES"
+      ],
+      "language": 3082,
+      "unicode": true,
+      "runAfterFinish": false,
+      "createDesktopShortcut": true
+    },
+    "linux": {
+      "target": [
+        "deb",
+        "rpm",
+        "AppImage"
+      ],
+      "executableName": "browgraph",
+      "icon": "build/images/browgraph.icns",
+      "category": "utils"
+    },
+    "appImage": {
+      "license": "LICENSE"
+    }
+  }
+}
