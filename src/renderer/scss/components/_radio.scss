@@ -1,0 +1,51 @@
+@use '../abstracts' as *;
+
+.radio {
+  align-items: center;
+  background: set-theme('light','bg-primary');
+  border-radius: 0.3125rem;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  height: 2.5rem;
+  justify-content: space-between;
+  width: 50rem;
+}
+
+.radio__body {
+  display: flex;
+  flex-direction: row;
+  gap: 0.625rem;
+}
+
+.radio__circ {
+  background: transparent;
+  border: 0.125rem solid radio-style('unchecked', 'stroke');
+  border-radius: 100%;
+  height: 0.9375rem;
+  margin: 0 0 0 1.25rem;
+  width: 0.9375rem;
+}
+
+.radio__circ--checked {
+  background: radio-style('checked', 'bg-color');
+  border: 2px solid radio-style('checked', 'stroke');
+}
+
+.radio__country {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  gap: 0.625rem;
+  padding: 0 1.25rem 0 0;
+}
+
+@media (prefers-color-scheme: dark) {
+  .radio {
+    background: set-theme('dark','bg-primary');
+  }
+  
+  .radio__circ {
+    border: 1px solid radio-style('unchecked-dark', 'stroke');
+  }
+}

@@ -1,0 +1,38 @@
+@use '../abstracts' as *;
+
+.range__input {
+  &::-webkit-slider-thumb {
+    appearance: none;
+    border: 0.3125rem solid range-style('circle', 'bg-color');
+    background: range-style('circle', 'point');
+    border-radius: 100%;
+    box-shadow: 0rem 0.0625rem 0.5rem 0rem rgba(0, 0, 0, 0.25);
+    cursor: grab;
+    height: 1.125rem;
+    width: 1.125rem;
+  }
+}
+
+.main__input {
+  &::placeholder {
+    color: #C1C1C1;
+  }
+  &::-webkit-search-cancel-button {
+    display: none;
+  }
+}
+
+.modal__input {
+  &::placeholder {
+    color: #C1C1C1;
+    font-weight: 400;
+  }
+}
+
+.radio {
+  span {
+    &::selection {
+      background: transparent;
+    }
+  }
+}

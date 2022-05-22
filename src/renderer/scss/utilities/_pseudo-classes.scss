@@ -1,0 +1,105 @@
+@use '../abstracts' as *;
+
+.header__btn--theme {
+  &:hover {
+    box-shadow: button-style('theme-btn', 'shadow');
+    transition: .5s ease all;
+  }
+}
+
+.header__btn--help {
+  &:hover {
+    background: button-style('help-btn', 'hover-color');
+    box-shadow: button-style('help-btn', 'shadow');
+    transition: .5s ease all;
+  }
+}
+
+.header__btn--file {
+  &:hover {
+    background: button-style('file-btn', 'hover-color');
+    box-shadow: button-style('file-btn', 'shadow');
+    transition: .5s ease all;
+  }
+}
+
+.main__btn--add {
+  &:hover {
+    background: button-style('add-btn', 'hover-color');
+    box-shadow: button-style('add-btn', 'shadow');
+    transition: .5s ease all;
+  }
+}
+
+.main__btn--edit {
+  &:hover {
+    background: button-style('update-btn', 'hover-color');
+    box-shadow: button-style('update-btn', 'shadow');
+    transition: .5s ease;
+  }
+}
+
+.main__btn--remove {
+  &:hover {
+    background: button-style('remove-btn', 'hover-color');
+    box-shadow: button-style('remove-btn', 'shadow');
+    transition: .5s ease;
+  }
+}
+
+.main__section-btn {
+  &:hover {
+    color: #D73582;
+    transition: .5s ease;
+  }
+}
+
+.main__section-btn--exit {
+  &:hover {
+    color: #f55b5b;
+  }
+}
+
+.category-manager__btn-add {
+  &:hover {
+    box-shadow: 0 0 0 4px rgb(46 51 56 / 50%);
+    transition: .5s ease;
+  }
+}
+
+.category-manager__btn-remove {
+  &:hover {
+    box-shadow: button-style('remove-category-btn', 'shadow');
+    transition: .5s ease;
+  }
+}
+
+.modal__btn-add {
+  &:hover {
+    background: button-style('add-btn', 'hover-color');
+    box-shadow: button-style('add-btn', 'shadow');
+    transition: .5s ease;
+  }
+}
+
+.modal__btn-edit {
+  &:hover {
+    background: button-style('update-btn', 'hover-color');
+    box-shadow: button-style('update-btn', 'shadow');
+    transition: .5s ease;
+  }
+}
+
+.modal__btn-confirm {
+  &:hover {
+    box-shadow: button-style('confirm-btn', 'shadow');
+    transition: .5s ease;
+  }
+}
+
+.modal__btn-cancel {
+  &:hover {
+    box-shadow: button-style('cancel-btn', 'shadow');
+    transition: .5s ease;
+  }
+}

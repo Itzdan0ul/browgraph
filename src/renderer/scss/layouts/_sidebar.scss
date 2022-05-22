@@ -1,0 +1,37 @@
+@use '../abstracts' as *;
+
+.sidebar {
+  background: set-theme('light', 'bg-primary');
+  border-right: 0.0625rem solid set-theme('light', 'border-color');
+  border-top: 0.0625rem solid set-theme('light', 'border-color');
+  grid-area: sidebar;
+}
+
+.sidebar__header {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 6.25rem;
+  justify-content: center;
+}
+
+.sidebar__body {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  height: 100vh;
+  width: 100%;
+  
+}
+
+.sidebar__btn {
+  align-items: center;
+  background: inherit;
+  border-radius: 0.9375rem;
+  display: flex;
+  flex-direction: column;
+  height: 3.75rem;
+  justify-content: center;
+  width: 3.75rem;
+}

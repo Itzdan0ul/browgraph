@@ -1,0 +1,9 @@
+@use '../abstracts' as *;
+
+body {
+  background: set-theme('light', 'bg-secundary');
+  color: set-theme('light', 'fg-color');
+  font-family: 'Manrope';
+  font-size: 16px;
+  overflow: hidden;
+}

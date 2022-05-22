@@ -1,0 +1,32 @@
+@mixin app-button {
+  align-items: center;
+  background: inherit;
+  display: flex;
+  justify-content: center;
+  height: 2.5rem;
+  width: 2.5rem;
+}
+
+@mixin icon-button {
+  height: 2.5rem;
+  width: 2.5rem;
+}
+
+@mixin modal($component) {
+  @if $component == 'ModalCategoryManager' {
+    height: 16.25rem;
+    width: 37.5rem;
+  } @else if $component == 'ModalMaterialForm' {
+    height: 36.875rem;
+    width: 30rem;
+  } @else if $component == 'ModalRemoveAlert' {
+    height: 17.5rem;
+    width: 26.875rem;
+  } @else if $component == 'ModalBackup' {
+    height: 19.6875rem;
+    width: 37.5rem;
+  } @else if $component == 'ModalMaterialFormEdit' {
+    height: 38.4375rem;
+    width: 30rem;
+  }
+}

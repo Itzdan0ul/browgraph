@@ -1,0 +1,91 @@
+$theme: (
+  light: (
+    bg-primary: #fff,
+    bg-secundary: #f1f1f1,
+    border-color: rgba(0, 0, 0, 0.13),
+    fg-color: #7a7a7a,
+  ),
+  dark: (
+    bg-primary: #36393f,
+    bg-secundary: #40444b,
+    border-color: rgba(255, 255, 255, 0.13),
+    fg-color: #d8dfe7,
+  ),
+);
+
+$radio: (
+  checked: (
+    bg-color: #d73582,
+    stroke: #fae1ed,
+  ),
+  unchecked: (
+    bg-color: transparent,
+    stroke: rgba(0, 0, 0, 0.13),
+  ),
+  unchecked-dark: (
+    stroke: rgba(216, 223, 231, 0.6),
+  ),
+);
+
+$range: (
+  fill: (
+    primary: #fae1ed,
+    secundary: #d73582,
+  ),
+  circle: (
+    bg-color: #fff,
+    point: #dedede,
+  ),
+);
+
+$buttons: (
+  theme-btn: (
+    bg-color: #88c8f7,
+    shadow: 0 0 0 0.25rem rgb(136 200 247 / 50%),
+  ),
+  help-btn: (
+    bg-color: #0167bc,
+    hover-color: #014fb4,
+    shadow: 0 0 0 0.25rem rgb(1 103 188 / 50%),
+  ),
+  file-btn: (
+    bg-color: #9c7dde,
+    hover-color: #8e6fd3,
+    shadow: 0 0 0 0.25rem rgb(156 125 222 / 50%),
+  ),
+  add-btn: (
+    bg-color: #8bde7d,
+    hover-color: #79ce6b,
+    shadow: 0 0 0 0.25rem rgb(139 222 125 / 50%),
+  ),
+  update-btn: (
+    bg-color: #7da4de,
+    hover-color: #658ac2,
+    shadow: 0 0 0 0.25rem rgb(125 164 222 / 50%),
+  ),
+  remove-btn: (
+    bg-color: #de7d7d,
+    hover-color: #ca6969,
+    shadow: 0 0 0 0.25rem rgb(222 125 125 / 50%),
+  ),
+  remove-category-btn: (
+    bg-color: #ff9a9a,
+    shadow: 0 0 0 0.25rem rgb(255 154 154 / 50%),
+  ),
+  confirm-btn: (
+    bg-color: #83b9f8,
+    shadow: 0 0 0 0.25rem rgb(131 185 248 / 50%),
+  ),
+  cancel-btn: (
+    bg-color: #767676,
+    shadow: 0 0 0 0.25rem rgb(118 118 118 / 50%),
+  ),
+  create-btn: (
+    bg-color: #f86f88,
+    shadow: 0 0 0 0.25rem rgb(118 118 118 / 50%),
+  ),
+  upload-btn: (
+    bg-color: #6f7df8,
+    shadow: 0 0 0 0.25rem rgb(118 118 118 / 50%),
+  ),
+);

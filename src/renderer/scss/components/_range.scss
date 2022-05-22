@@ -1,0 +1,27 @@
+@use '../abstracts' as *;
+
+.range {
+  background: transparent;
+  margin: 1.25rem 0 0 0;
+}
+
+.range__body {
+  display: flex;
+  flex-direction: column;
+}
+
+.range__text {
+  color: #333;
+  font-size: 0.875em;
+  font-weight: 500;
+  margin: 0 0 0.9375rem 0;
+}
+
+.range__input {
+  appearance: none;
+  background: range-style('fill', 'primary');
+  background-image: linear-gradient(to right, range-style('fill', 'secundary') calc(var(--value) * 1%), range-style('fill', 'primary') 0);
+  border-radius: 0.625rem;
+  height: 0.625rem;
+  width: 50rem;
+}

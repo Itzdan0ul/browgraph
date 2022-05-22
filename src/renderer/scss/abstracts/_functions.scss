@@ -1,0 +1,37 @@
+@use 'variables' as *;
+
+@function set-theme($property, $item) {
+  $style: map-get(
+    $map: $theme,
+    $key: $property,
+  );
+
+  @return map-get($map: $style, $key: $item);
+}
+
+@function radio-style($property, $item) {
+  $style: map-get(
+    $map: $radio,
+    $key: $property,
+  );
+
+  @return map-get($map: $style, $key: $item);
+}
+
+@function range-style($property, $item) {
+  $style: map-get(
+    $map: $range,
+    $key: $property,
+  );
+
+  @return map-get($map: $style, $key: $item);
+}
+
+@function button-style($property, $item) {
+  $style: map-get(
+    $map: $buttons,
+    $key: $property,
+  );
+
+  @return map-get($map: $style, $key: $item);
+}

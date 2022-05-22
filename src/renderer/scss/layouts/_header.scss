@@ -1,0 +1,74 @@
+@use '../abstracts' as *;
+
+/*
+* Header - Base
+*/
+
+.header {
+  align-items: center;
+  background: set-theme('light', 'bg-primary');
+  border-bottom: 1px solid set-theme('light', 'border-color');
+  border-top: 1px solid set-theme('light', 'border-color');
+  display: flex;
+  justify-content: flex-end;
+  grid-area: header;
+}
+
+.header__nav {
+  display: flex;
+  gap: 1.25rem;
+  margin-right: 1.25rem;
+}
+
+.header__btn {
+  @include app-button;
+}
+
+.header__btn--theme {
+  border: 1px solid button-style('theme-btn', 'bg-color');
+  border-radius: 100%;
+}
+
+.header__btn--help {
+  background: button-style('help-btn', 'bg-color');
+  border-radius: 100%;
+}
+
+/*
+* Header - Home
+*/
+
+.header--home {
+  display: flex;
+  gap: 1.25rem;
+}
+
+.header__selector {
+  font-size: 0.875em;
+  height: 2.5rem;
+  width: 21.875rem;
+}
+
+/*
+* Header - Folder
+*/
+
+.header--folder {
+  display: flex;
+  gap: 1.25rem;
+}
+
+.header__body {
+  align-items: center;
+  border: 1px solid set-theme('light', 'border-color');
+  border-radius: 0.625rem;
+  display: flex;
+  height: 2.5rem;
+  justify-content: center;
+  width: 66.875rem;
+}
+
+.header__btn--file {
+  background: button-style('file-btn', 'bg-color');
+  border-radius: 100%;
+}

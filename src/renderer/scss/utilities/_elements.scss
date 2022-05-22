@@ -1,0 +1,225 @@
+@use '../abstracts' as *;
+
+.selector {
+  option {
+    color: #7A7A7A;
+    font-weight: 800;
+  }
+}
+
+.radio {
+  span {
+    color: set-theme('light', 'fg-color');
+    cursor: inherit;
+    font-size: 0.8125em;
+    font-weight: 600;
+  }
+}
+
+.radio__country {
+  span {
+    color: set-theme('light', 'fg-color');
+    font-size: 0.625em;
+    font-weight: 300;
+  }
+  img {
+    height: 1.875rem;
+    width: 1.875rem;
+  }
+}
+
+.modal__close-btn {
+  svg {
+    height: 1.125rem;
+    width: 1.125rem;
+  }
+}
+
+.header__btn {
+  svg {
+    @include icon-button;
+  }
+}
+
+.header__btn--theme {
+  svg {
+    height: 1.5rem;
+    width: 1.5rem;
+  }
+}
+
+.header__btn--help {
+  svg {
+    height: 1.5rem;
+    width: 1.5rem;
+  }
+}
+
+.header__body {
+  span {
+    color: #7A7A7A;
+    font-size: 0.875em;
+    font-weight: 800;
+  }
+}
+
+.header__btn--file {
+  svg {
+    height: 1.5rem;
+    width: 1.5rem;
+  }
+}
+
+.main__search-bar {
+  svg {
+    height: 1.5rem;
+    width: 1.5rem;
+  }
+}
+
+.main__btn {
+  svg {
+    @include icon-button;
+  }
+}
+
+.main__btn--add {
+  svg {
+    height: 1.5rem;
+    width: 1.5rem;
+  }
+}
+
+.main__table {
+  thead {
+    background: set-theme('light', 'bg-primary');
+    border-bottom: 0.0625rem solid set-theme('light', 'border-color');
+    text-align: center;
+  }
+  tbody {
+    background: set-theme('light', 'bg-primary');
+    text-align: center;
+  }
+  tr {
+    text-align: center;
+  }
+  th {
+    font-size: 0.875em;
+    font-weight: 600;
+  } 
+  td {
+    font-size: 0.875em;
+    font-weight: 400;
+  }
+}
+
+.main__btn--edit {
+  svg {
+    height: 1rem;
+    width: 1rem;
+  }
+}
+
+.main__btn--remove {
+  svg {
+    height: 1rem;
+    width: 1rem;
+  }
+}
+
+.main__menu {
+  figure {
+    margin: 0.625rem 0;
+  }
+  p {
+    font-size: 0.625em;
+    font-weight: 300;
+    margin: 0 0 0.625rem 0;
+  }
+}
+
+.main__github {
+  svg {
+    height: 1.25rem;
+    width: 1.25rem;
+  }
+}
+
+.esc {
+  span {
+    font-size: 0.8125rem;
+    font-weight: 700;
+    margin: 0.3125rem 0 0 0;
+  }
+}
+
+.category-manager__table {
+  tr {
+    display: flex;
+    justify-content: space-around;
+    margin: 0.625rem 0;
+  }
+  td {
+    color: #7A7A7A;
+    font-size: 0.875em;
+    font-weight: 800;
+  }
+}
+
+.modal__circle {
+  svg {
+    height: 2.875rem;
+    width: 2.875rem;
+  }
+}
+
+.modal__btn--create {
+  span {
+    color: #FFF;
+    font-size: 1.25em;
+    font-weight: 700;
+    margin:  0 0 0.625rem 0;
+  }
+  svg {
+    height: 4rem;
+    width: 4rem;
+  }
+}
+
+.modal__btn--upload {
+  span {
+    color: #FFF;
+    font-size: 1.25em;
+    font-weight: 700;
+    margin:  0 0 0.625rem 0;
+  }
+  svg {
+    height: 4rem;
+    width: 4rem;
+  }
+}
+
+.sidebar__header {
+  svg {
+    height: 2.5rem;
+    width: 2.5rem;
+  }
+  span {
+    color: #000;
+    font-size: 0.875em;
+    font-weight: bold;
+    margin: 0.1875rem 0 0 0;
+  }
+}
+
+.sidebar__btn {
+  svg {
+    height: 1.5rem;
+    width: 1.5rem;
+  }
+  span {
+    color: set-theme('light', 'fg-color');
+    font-size: 0.625em;
+    font-weight: 300;
+  }
+}

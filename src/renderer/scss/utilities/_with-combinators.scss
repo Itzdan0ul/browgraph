@@ -1,0 +1,43 @@
+@use '../abstracts' as *;
+
+.sidebar__btn {
+  &:hover > span {
+    color: #36393F;
+    transition: .5s ease;
+  }
+}
+
+.esc__btn {
+  &:hover + span {
+    color: red;
+    transition: .5s ease;
+  }
+}
+
+.modal__close-btn {
+  &:hover svg > path {
+    fill: button-style('remove-btn', 'bg-color');
+    transition: .5s ease;
+  }
+}
+
+.esc__btn {
+  &:hover svg > path {
+    fill: red;
+    transition: .5s ease;
+  }
+}
+
+.sidebar__btn {
+  &:hover svg > path {
+    fill: #36393F;
+    transition: .5s ease;
+  }
+}
+
+.header__btn {
+  &:hover svg > .header__path {
+    fill: #36393F;
+    transition: .5s ease;
+  }
+}

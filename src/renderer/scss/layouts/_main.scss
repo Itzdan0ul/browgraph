@@ -1,0 +1,271 @@
+@use '../abstracts' as *;
+
+/*
+* Main - Base
+*/
+
+.main {
+  background: inherit;
+  display: flex;
+  flex-direction: column;
+  grid-area: main;
+}
+
+.main--settings {
+  flex-direction: row;
+}
+
+/*
+* Main - Home
+*/
+
+.main__header {
+  align-items: center;
+  background: set-theme('light', 'bg-primary');
+  border-bottom: 1px solid set-theme('light', 'border-color');
+  display: flex;
+  gap: 1.5rem;
+  height: 5rem;
+  width: 100%;
+}
+
+.main__search-bar {
+  align-items: center;
+  border: 1px solid set-theme('light', 'border-color');
+  border-radius: 6.25rem;
+  display: flex;
+  padding: 0 0.625rem 0 0;
+}
+
+.main__input {
+  border-radius: 6.25rem;
+  font-size: 0.875em;
+  font-weight: 600;
+  height: 2.5rem;
+  text-indent: 1.25rem;
+  width: 30rem;
+}
+
+.main__btn {
+  @include app-button;
+}
+
+.main__btn--add {
+  background: button-style('add-btn', 'bg-color');
+  border-radius: 100%;
+  margin: 0 0 0 1.875rem;
+}
+
+.main__body--home {
+  width: 100%;
+}
+
+.main__tr--th {
+  height: 3.125rem;
+}
+
+.main__tr--td {
+  border-bottom: 0.0625rem solid set-theme('light', 'border-color');
+  height: 4.375rem;
+}
+
+.main__btn-group {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 0.625rem;
+}
+
+.main__btn--edit {
+  background: button-style('update-btn', 'bg-color');
+  border-radius: 100%;
+  height: 1.875rem;
+  width: 1.875rem;
+}
+
+.main__btn--remove {
+  background: button-style('remove-btn', 'bg-color');
+  border-radius: 100%;
+  height: 1.875rem;
+  width: 1.875rem;
+}
+
+/*
+* Main - Folder
+*/
+
+.main__body--folder {
+  height: calc(100vh - 5rem);
+}
+
+.main__embed {
+  height: 100%;
+  width: 100%;
+}
+
+/*
+* Main Settings
+*/
+
+.main__sidebar {
+  background: set-theme('light', 'bg-primary');
+  border-right: 0.0625rem solid set-theme('light', 'border-color');
+  border-top: 0.0625rem solid set-theme('light', 'border-color');
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 18.75rem;
+}
+
+.main__title {
+  align-items: center;
+  border-bottom: 0.0625rem solid set-theme('light', 'border-color');
+  color: inherit;
+  display: flex;
+  font-size: 0.875em;
+  font-weight: 700;
+  height: 3.125rem;
+  margin: 0 1.25rem;
+}
+
+.main__menu {
+  border-bottom: 1px solid set-theme('light', 'border-color');
+  display: flex;
+  flex-direction: column;
+  margin: 0 1.25rem;
+}
+
+.main__menu--info {
+  border: 0;
+}
+
+.main__section-btn {
+  background: inherit;
+  color: set-theme('light', 'fg-color');
+  font-size: 0.8125em;
+  font-weight: 500;
+  height: 1.875rem;
+  text-align: start;
+}
+
+.main__section-btn--exit {
+  color: #FA8D8D;
+}
+
+.main__body--settings {
+  display: flex;
+}
+
+/*
+* Section: Appearance
+*/
+
+.main__appearance-section {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 51.25rem;
+  margin: 0 0 0 1.25rem;
+}
+
+.section__header--appearance {
+  margin: 4.375rem 0 0 0;
+}
+
+.section__title--appareance {
+  color: #333;
+  font-size: 1.125em;
+  font-weight: 700;
+  margin: 0;
+}
+
+.section__body--appareance {
+  display: flex;
+  flex-direction: column;
+}
+
+.section__thumb {
+  align-items: center;
+  background: set-theme('light', 'bg-primary');
+  border-radius: 0.3125rem;
+  display: flex;
+  gap: 4.375rem;
+  height: 15.625rem;
+  justify-content: center;
+  margin: 0.6875rem 0 1.25rem 0;
+  width: 50rem;
+}
+
+.section__theme-title {
+  color: #333;
+  font-size: 0.8125em;
+  margin: 0 0 0.625rem 0;
+}
+
+.section__options--appearance {
+  border-bottom: 0.0625rem solid set-theme('light', 'border-color');
+  display: flex;
+  flex-direction: column;
+  gap: 0.9375rem;
+  margin: 0 1.25rem 0 0;
+  padding: 0 0 2.5rem 0;
+}
+
+/*
+* Section: Language
+*/
+
+.main__language-section {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 51.25rem;
+  margin: 0 0 0 1.25rem;
+}
+
+.section__header--language {
+  margin: 4.375rem 0 0 0;
+}
+
+.section__title--language {
+  color: #333;
+  font-size: 1.125em;
+  font-weight: 700;
+  margin: 0;
+}
+
+.section__theme-title--language {
+  color: #333;
+  font-size: 0.8125em;
+  font-weight: 500;
+  margin: 0.625rem 0 0.625rem 0;
+}
+
+.section__options--language {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9375rem;
+}
+
+/*
+* Esc Button
+*/
+
+.esc {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  margin: 1.5625rem 0 0 0.625rem;
+}
+
+.esc__btn {
+  align-items: center;
+  background: inherit;
+  border: 0.125rem solid #333;
+  border-radius: 100%;
+  height: 2.5rem;
+  display: flex;
+  justify-content: center;
+  width: 2.5rem;
+}

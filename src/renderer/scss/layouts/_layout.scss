@@ -1,0 +1,9 @@
+.layout {
+  background: inherit;
+  display: grid;
+  grid-template-areas: 'sidebar header header'
+                       'sidebar main   main';
+  grid-template-columns: 8.125rem auto;
+  grid-template-rows: 5rem auto;
+  height: 100vh;
+}
