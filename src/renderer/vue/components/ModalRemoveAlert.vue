@@ -1,0 +1,57 @@
+<template>
+  <div class="modal" role="dialog">
+    <div class="modal__overlay"></div>
+    <Transition
+      name="modal-transition"
+      enter-active-class="animate__animated animate__rubberBand"
+    >
+      <div
+        class="modal__root modal__root--alert-remove"
+        v-show="name.includes('ModalRemoveAlert')"
+      >
+        <div class="modal__body">
+          <div class="modal__options--alert">
+            <div class="modal__question">
+              <div class="modal__circle">
+                <svg
+                  width="46"
+                  height="46"
+                  viewBox="0 0 46 46"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M15.1801 14.4517C13.6467 13.8 12.9951 11.9025 13.9151 10.5225C15.7742 7.7625 18.8792 5.75 22.9809 5.75C27.4851 5.75 30.5709 7.80083 32.1426 10.3692C33.4842 12.5733 34.2701 16.6942 32.2001 19.7608C29.9001 23.1533 27.6959 24.1883 26.5076 26.3733C26.2201 26.8908 26.0476 27.3125 25.9326 28.175C25.7601 29.5742 24.6101 30.6667 23.1917 30.6667C21.5242 30.6667 20.1634 29.2292 20.3551 27.5617C20.4701 26.5842 20.7001 25.5683 21.2367 24.61C22.7126 21.9458 25.5492 20.3742 27.1976 18.0167C28.9417 15.5442 27.9642 10.925 23.0192 10.925C20.7767 10.925 19.3201 12.0942 18.4192 13.4933C17.7484 14.5858 16.3492 14.9308 15.1801 14.4517ZM26.8334 38.3333C26.8334 40.4417 25.1084 42.1667 23.0001 42.1667C20.8917 42.1667 19.1667 40.4417 19.1667 38.3333C19.1667 36.225 20.8917 34.5 23.0001 34.5C25.1084 34.5 26.8334 36.225 26.8334 38.3333Z"
+                    fill="white"
+                  />
+                </svg>
+              </div>
+            </div>
+            <h2 class="modal__message">Do you want to remove this material?</h2>
+            <div class="modal__btn-group">
+              <button class="btn modal__btn modal__btn-confirm" type="button"
+                >Yes, delete it!</button
+              >
+              <button
+                class="btn modal__btn modal__btn-cancel"
+                type="button"
+                @click="renderModal('')"
+                >Cancel</button
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </Transition>
+  </div>
+</template>
+
+<script>
+  import { mapState, mapMutations } from 'vuex';
+
+  export default {
+    name: 'ModalRemoveAlert',
+    methods: { ...mapMutations('modal', { renderModal: 'RENDER_MODAL' }) },
+    computed: { ...mapState('modal', ['name']) },
+  };
+</script>

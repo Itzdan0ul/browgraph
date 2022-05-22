@@ -1,0 +1,407 @@
+<template>
+  <section class="main__appearance-section">
+    <div class="section__header--appearance">
+      <h2 class="section__title--appareance">
+        {{ message['Appearance'].toUpperCase() }}
+      </h2>
+    </div>
+    <div class="section__body--appareance">
+      <div class="section__thumb">
+        <svg
+          width="300"
+          height="190"
+          viewBox="0 0 300 190"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <g filter="url(#filter0_d_2580_2)">
+            <rect x="6" y="6" width="280" height="170" fill="#F1F1F1" />
+          </g>
+          <rect
+            x="21"
+            y="36"
+            width="15"
+            height="265"
+            transform="rotate(-90 21 36)"
+            fill="white"
+          />
+          <rect
+            x="21"
+            y="46"
+            width="10"
+            height="265"
+            transform="rotate(-90 21 46)"
+            fill="white"
+          />
+          <rect
+            x="21"
+            y="61"
+            width="15"
+            height="265"
+            transform="rotate(-90 21 61)"
+            fill="white"
+          />
+          <rect
+            x="21"
+            y="76"
+            width="15"
+            height="265"
+            transform="rotate(-90 21 76)"
+            fill="white"
+          />
+          <rect
+            x="21"
+            y="91"
+            width="15"
+            height="265"
+            transform="rotate(-90 21 91)"
+            fill="white"
+          />
+          <line
+            x1="21"
+            y1="35.75"
+            x2="286"
+            y2="35.75"
+            stroke="black"
+            stroke-opacity="0.13"
+            stroke-width="0.5"
+          />
+          <line
+            x1="21"
+            y1="45.75"
+            x2="286"
+            y2="45.75"
+            stroke="black"
+            stroke-opacity="0.13"
+            stroke-width="0.5"
+          />
+          <line
+            x1="21"
+            y1="60.75"
+            x2="286"
+            y2="60.75"
+            stroke="black"
+            stroke-opacity="0.13"
+            stroke-width="0.5"
+          />
+          <line
+            x1="21"
+            y1="75.75"
+            x2="286"
+            y2="75.75"
+            stroke="black"
+            stroke-opacity="0.13"
+            stroke-width="0.5"
+          />
+          <rect x="47" y="40" width="3" height="2" rx="1" fill="#7A7A7A" />
+          <rect x="47" y="53" width="3" height="2" rx="1" fill="#7A7A7A" />
+          <rect x="46" y="68" width="3" height="2" rx="1" fill="#7A7A7A" />
+          <rect x="47" y="82" width="3" height="2" rx="1" fill="#7A7A7A" />
+          <rect x="72" y="40" width="8" height="2" rx="1" fill="#7A7A7A" />
+          <rect x="72" y="53" width="8" height="2" rx="1" fill="#7A7A7A" />
+          <rect x="72" y="68" width="8" height="2" rx="1" fill="#7A7A7A" />
+          <rect x="72" y="82" width="8" height="2" rx="1" fill="#7A7A7A" />
+          <rect x="117" y="40" width="10" height="2" rx="1" fill="#7A7A7A" />
+          <rect x="117" y="53" width="10" height="2" rx="1" fill="#7A7A7A" />
+          <rect x="117" y="69" width="10" height="2" rx="1" fill="#7A7A7A" />
+          <rect x="117" y="83" width="10" height="2" rx="1" fill="#7A7A7A" />
+          <rect x="154" y="40" width="17" height="2" rx="1" fill="#7A7A7A" />
+          <rect x="154" y="52" width="17" height="2" rx="1" fill="#7A7A7A" />
+          <rect x="154" y="68" width="17" height="2" rx="1" fill="#7A7A7A" />
+          <rect x="154" y="83" width="17" height="2" rx="1" fill="#7A7A7A" />
+          <rect x="211" y="40" width="17" height="2" rx="1" fill="#7A7A7A" />
+          <rect x="246" y="40" width="28" height="2" rx="1" fill="#7A7A7A" />
+          <rect x="246" y="52" width="28" height="2" rx="1" fill="#7A7A7A" />
+          <rect x="246" y="68" width="28" height="2" rx="1" fill="#7A7A7A" />
+          <rect x="246" y="83" width="28" height="2" rx="1" fill="#7A7A7A" />
+          <rect x="211" y="52" width="17" height="2" rx="1" fill="#7A7A7A" />
+          <rect x="211" y="68" width="17" height="2" rx="1" fill="#7A7A7A" />
+          <rect x="211" y="83" width="17" height="2" rx="1" fill="#7A7A7A" />
+          <rect x="6" y="6" width="15" height="170" fill="white" />
+          <path
+            d="M14.627 10.3255C14.7618 10.1907 14.9834 10.1894 15.0927 10.3456C15.308 10.6534 15.4324 11.0186 15.4473 11.3988C15.4668 11.8948 15.2986 12.3799 14.9762 12.7573C14.6539 13.1348 14.2011 13.3768 13.7081 13.4351C13.2152 13.4935 12.7184 13.3638 12.3168 13.0721C11.9153 12.7803 11.6385 12.3479 11.5416 11.8611C11.4448 11.3742 11.535 10.8688 11.7944 10.4456C12.0537 10.0223 12.4631 9.71246 12.9408 9.57772C13.307 9.47445 13.6928 9.4799 14.0521 9.58958C14.2345 9.64523 14.3016 9.85637 14.2151 10.0262V10.0262C14.1285 10.1961 13.9203 10.2584 13.7335 10.2201C13.5345 10.1794 13.3269 10.1862 13.1282 10.2422C12.8177 10.3298 12.5516 10.5312 12.3831 10.8063C12.2145 11.0814 12.1558 11.4099 12.2187 11.7264C12.2817 12.0428 12.4616 12.3239 12.7226 12.5135C12.9837 12.7032 13.3066 12.7874 13.627 12.7495C13.9474 12.7116 14.2417 12.5543 14.4512 12.3089C14.6608 12.0636 14.7701 11.7483 14.7575 11.4259C14.7494 11.2196 14.6917 11.0201 14.5914 10.8434C14.4973 10.6776 14.4922 10.4603 14.627 10.3255V10.3255Z"
+            fill="#2F2626"
+          />
+          <path
+            d="M14.9584 10.0416C15.1293 9.87074 15.4101 9.86903 15.5486 10.067C15.8215 10.4572 15.9791 10.92 15.9981 11.4018C16.0228 12.0305 15.8096 12.6453 15.401 13.1236C14.9925 13.602 14.4186 13.9087 13.7938 13.9827C13.1691 14.0566 12.5395 13.8923 12.0305 13.5225C11.5216 13.1528 11.1708 12.6047 11.048 11.9877C10.9253 11.3707 11.0397 10.7301 11.3684 10.1938C11.6971 9.65737 12.2159 9.26462 12.8214 9.09386C13.2855 8.96297 13.7744 8.96989 14.2298 9.10889C14.4609 9.17942 14.5461 9.44701 14.4364 9.6623V9.6623C14.3267 9.87759 14.0627 9.95651 13.826 9.90804C13.5738 9.85639 13.3107 9.86499 13.0589 9.93601C12.6654 10.047 12.3281 10.3023 12.1145 10.6509C11.9008 10.9996 11.8265 11.416 11.9062 11.817C11.986 12.2181 12.214 12.5743 12.5449 12.8146C12.8757 13.055 13.2849 13.1618 13.691 13.1137C14.0971 13.0657 14.4701 12.8663 14.7357 12.5553C15.0012 12.2444 15.1398 11.8448 15.1237 11.4362C15.1135 11.1748 15.0404 10.9219 14.9133 10.698C14.7941 10.4878 14.7876 10.2124 14.9584 10.0416V10.0416Z"
+            fill="#D73582"
+          />
+          <rect x="10" y="15" width="8" height="2" rx="1" fill="#2E3338" />
+          <rect x="12" y="22" width="3" height="3" rx="1" fill="#2E3338" />
+          <rect x="12" y="30" width="3" height="3" rx="1" fill="#2E3338" />
+          <rect x="12" y="38" width="3" height="3" rx="1" fill="#2E3338" />
+          <rect x="24" y="26" width="5" height="5" rx="2.5" fill="#8BDE7D" />
+          <rect x="125" y="26" width="30" height="5" rx="1" fill="white" />
+          <rect
+            x="125.25"
+            y="26.25"
+            width="29.5"
+            height="4.5"
+            rx="0.75"
+            stroke="black"
+            stroke-opacity="0.13"
+            stroke-width="0.5"
+          />
+          <rect x="158" y="26" width="42" height="5" rx="1" fill="white" />
+          <rect
+            x="158.25"
+            y="26.25"
+            width="41.5"
+            height="4.5"
+            rx="0.75"
+            stroke="black"
+            stroke-opacity="0.13"
+            stroke-width="0.5"
+          />
+          <rect x="32" y="26" width="90" height="5" rx="2.5" fill="white" />
+          <rect
+            x="32.25"
+            y="26.25"
+            width="89.5"
+            height="4.5"
+            rx="2.25"
+            stroke="black"
+            stroke-opacity="0.13"
+            stroke-width="0.5"
+          />
+          <rect
+            x="21"
+            y="21"
+            width="15"
+            height="265"
+            transform="rotate(-90 21 21)"
+            fill="white"
+          />
+          <rect x="270" y="11" width="5" height="5" rx="2.5" fill="#0167BC" />
+          <rect x="198" y="11" width="5" height="5" rx="2.5" fill="#2E3338" />
+          <rect
+            x="262.1"
+            y="11.1"
+            width="4.8"
+            height="4.8"
+            rx="2.4"
+            fill="white"
+            stroke="#88C8F7"
+            stroke-width="0.2"
+          />
+          <rect x="207" y="11" width="53" height="5" rx="1" fill="white" />
+          <rect
+            x="207.25"
+            y="11.25"
+            width="52.5"
+            height="4.5"
+            rx="0.75"
+            stroke="black"
+            stroke-opacity="0.13"
+            stroke-width="0.5"
+          />
+          <circle cx="264.5" cy="13.5" r="1.5" fill="#FFD900" />
+          <rect x="209" y="13" width="16" height="1" rx="0.5" fill="#7A7A7A" />
+          <rect x="160" y="28" width="15" height="1" rx="0.5" fill="#7A7A7A" />
+          <rect x="127" y="28" width="8" height="1" rx="0.5" fill="#7A7A7A" />
+          <line
+            x1="21"
+            y1="20.75"
+            x2="286"
+            y2="20.75"
+            stroke="black"
+            stroke-opacity="0.13"
+            stroke-width="0.5"
+          />
+          <line
+            x1="20.75"
+            y1="176"
+            x2="20.75"
+            y2="6"
+            stroke="black"
+            stroke-opacity="0.13"
+            stroke-width="0.5"
+          />
+          <defs>
+            <filter
+              id="filter0_d_2580_2"
+              x="0"
+              y="0"
+              width="300"
+              height="190"
+              filterUnits="userSpaceOnUse"
+              color-interpolation-filters="sRGB"
+            >
+              <feFlood flood-opacity="0" result="BackgroundImageFix" />
+              <feColorMatrix
+                in="SourceAlpha"
+                type="matrix"
+                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                result="hardAlpha"
+              />
+              <feMorphology
+                radius="2"
+                operator="dilate"
+                in="SourceAlpha"
+                result="effect1_dropShadow_2580_2"
+              />
+              <feOffset dx="4" dy="4" />
+              <feGaussianBlur stdDeviation="4" />
+              <feComposite in2="hardAlpha" operator="out" />
+              <feColorMatrix
+                type="matrix"
+                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"
+              />
+              <feBlend
+                mode="normal"
+                in2="BackgroundImageFix"
+                result="effect1_dropShadow_2580_2"
+              />
+              <feBlend
+                mode="normal"
+                in="SourceGraphic"
+                in2="effect1_dropShadow_2580_2"
+                result="shape"
+              />
+            </filter>
+          </defs>
+        </svg>
+        <svg
+          width="300"
+          height="190"
+          viewBox="0 0 300 190"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <g filter="url(#filter0_d_2580_3)">
+            <rect x="6" y="6" width="280" height="170" fill="#F1F1F1" />
+          </g>
+          <rect x="6" y="6" width="15" height="170" fill="white" />
+          <path
+            d="M14.627 10.3255C14.7618 10.1907 14.9834 10.1894 15.0927 10.3456C15.308 10.6534 15.4324 11.0186 15.4473 11.3988C15.4668 11.8948 15.2986 12.3799 14.9762 12.7573C14.6539 13.1348 14.2011 13.3768 13.7081 13.4351C13.2152 13.4935 12.7184 13.3638 12.3168 13.0721C11.9153 12.7803 11.6385 12.3479 11.5416 11.8611C11.4448 11.3742 11.5351 10.8688 11.7944 10.4456C12.0538 10.0223 12.4631 9.71246 12.9409 9.57772C13.3071 9.47445 13.6928 9.4799 14.0521 9.58958C14.2345 9.64523 14.3017 9.85637 14.2151 10.0262C14.1286 10.1961 13.9203 10.2584 13.7335 10.2201C13.5345 10.1794 13.327 10.1862 13.1283 10.2422C12.8177 10.3298 12.5516 10.5312 12.3831 10.8063C12.2145 11.0814 12.1558 11.4099 12.2188 11.7264C12.2817 12.0428 12.4616 12.3239 12.7227 12.5135C12.9837 12.7032 13.3066 12.7874 13.627 12.7495C13.9474 12.7116 14.2417 12.5543 14.4513 12.3089C14.6608 12.0636 14.7701 11.7483 14.7575 11.4259C14.7494 11.2196 14.6917 11.0201 14.5914 10.8434C14.4973 10.6776 14.4922 10.4603 14.627 10.3255Z"
+            fill="#2F2626"
+          />
+          <path
+            d="M14.9584 10.0416C15.1293 9.87074 15.4101 9.86903 15.5486 10.067C15.8215 10.4572 15.9791 10.92 15.9981 11.4018C16.0228 12.0305 15.8096 12.6453 15.401 13.1236C14.9925 13.602 14.4186 13.9087 13.7938 13.9827C13.1691 14.0566 12.5395 13.8923 12.0305 13.5225C11.5216 13.1528 11.1708 12.6047 11.048 11.9877C10.9253 11.3707 11.0397 10.7301 11.3684 10.1938C11.6971 9.65737 12.2159 9.26462 12.8214 9.09386C13.2855 8.96297 13.7744 8.96989 14.2298 9.10889C14.4609 9.17942 14.5461 9.44701 14.4364 9.6623C14.3267 9.87759 14.0627 9.95651 13.826 9.90804C13.5738 9.85639 13.3107 9.86499 13.0589 9.93601C12.6654 10.047 12.3281 10.3023 12.1145 10.6509C11.9008 10.9996 11.8265 11.416 11.9062 11.817C11.986 12.2181 12.214 12.5743 12.5449 12.8146C12.8757 13.055 13.2849 13.1618 13.691 13.1137C14.0971 13.0657 14.4701 12.8663 14.7357 12.5553C15.0012 12.2444 15.1398 11.8448 15.1237 11.4362C15.1135 11.1748 15.0404 10.9219 14.9133 10.698C14.7941 10.4878 14.7876 10.2124 14.9584 10.0416Z"
+            fill="#D73582"
+          />
+          <rect x="10" y="15" width="8" height="2" rx="1" fill="#2E3338" />
+          <rect x="12" y="22" width="3" height="3" rx="1" fill="#2E3338" />
+          <rect x="12" y="30" width="3" height="3" rx="1" fill="#2E3338" />
+          <rect x="12" y="38" width="3" height="3" rx="1" fill="#2E3338" />
+          <rect
+            x="21"
+            y="21"
+            width="15"
+            height="265"
+            transform="rotate(-90 21 21)"
+            fill="white"
+          />
+          <rect x="271" y="11" width="5" height="5" rx="2.5" fill="#0167BC" />
+          <rect x="24" y="11" width="5" height="5" rx="2.5" fill="#9C7DDE" />
+          <rect
+            x="263.1"
+            y="11.1"
+            width="4.8"
+            height="4.8"
+            rx="2.4"
+            fill="white"
+            stroke="#88C8F7"
+            stroke-width="0.2"
+          />
+          <rect x="32" y="11" width="229" height="5" rx="1" fill="white" />
+          <rect
+            x="32.25"
+            y="11.25"
+            width="228.5"
+            height="4.5"
+            rx="0.75"
+            stroke="black"
+            stroke-opacity="0.13"
+            stroke-width="0.5"
+          />
+          <circle cx="265.5" cy="13.5" r="1.5" fill="#FFD900" />
+          <rect x="138" y="13" width="31" height="1" rx="0.5" fill="#7A7A7A" />
+          <line
+            x1="21"
+            y1="20.75"
+            x2="286"
+            y2="20.75"
+            stroke="black"
+            stroke-opacity="0.13"
+            stroke-width="0.5"
+          />
+          <line
+            x1="20.75"
+            y1="176"
+            x2="20.75"
+            y2="6"
+            stroke="black"
+            stroke-opacity="0.13"
+            stroke-width="0.5"
+          />
+          <defs>
+            <filter
+              id="filter0_d_2580_3"
+              x="0"
+              y="0"
+              width="300"
+              height="190"
+              filterUnits="userSpaceOnUse"
+              color-interpolation-filters="sRGB"
+            >
+              <feFlood flood-opacity="0" result="BackgroundImageFix" />
+              <feColorMatrix
+                in="SourceAlpha"
+                type="matrix"
+                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                result="hardAlpha"
+              />
+              <feMorphology
+                radius="2"
+                operator="dilate"
+                in="SourceAlpha"
+                result="effect1_dropShadow_2580_3"
+              />
+              <feOffset dx="4" dy="4" />
+              <feGaussianBlur stdDeviation="4" />
+              <feComposite in2="hardAlpha" operator="out" />
+              <feColorMatrix
+                type="matrix"
+                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"
+              />
+              <feBlend
+                mode="normal"
+                in2="BackgroundImageFix"
+                result="effect1_dropShadow_2580_3"
+              />
+              <feBlend
+                mode="normal"
+                in="SourceGraphic"
+                in2="effect1_dropShadow_2580_3"
+                result="shape"
+              />
+            </filter>
+          </defs>
+        </svg>
+      </div>
+      <h3 class="section__theme-title">{{ message['Theme'] }}</h3>
+      <div class="section__options--appearance">
+        <MainSettingsAppearanceRadio />
+      </div>
+      <div class="section__ranges">
+        <MainSettingsAppearanceRangeFontScale />
+      </div>
+    </div>
+  </section>
+</template>
+
+<script>
+  import { mapState } from 'vuex';
+  import MainSettingsAppearanceRadio from './MainSettingsAppearanceRadio.vue';
+  import MainSettingsAppearanceRangeFontScale from './MainSettingsAppearanceRangeFontScale.vue';
+
+  export default {
+    name: 'MainSettingsAppearance',
+    components: {
+      MainSettingsAppearanceRadio,
+      MainSettingsAppearanceRangeFontScale,
+    },
+    computed: { ...mapState('i18n', ['message']) },
+  };
+</script>
