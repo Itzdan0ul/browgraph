@@ -12,6 +12,6 @@
 - Multilanguage: en-US, es-MX.
 - Completely offline.
 
-## Lincense
+## License
 
 Apache-2.0
